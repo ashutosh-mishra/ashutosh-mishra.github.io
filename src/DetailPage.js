@@ -70,6 +70,7 @@ function DetailPage() {
               ''
             )}
           </p>
+          <p>
             <string>Custom Version - 1: Constant version
           </p>
         </div>
