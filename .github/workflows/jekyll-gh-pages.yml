@@ -33,12 +33,10 @@ jobs:
         uses: actions/setup-node@v3
       - name: Install Dependencies
         run: |
-          cd ./
           npm install
 
       - name: Build Project
         run: |
-          cd ./
           npm run build
 
       - name: Upload artifact to enable deployment
@@ -64,6 +62,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
         with:
           publish_dir: ./build
