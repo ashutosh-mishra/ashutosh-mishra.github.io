@@ -70,6 +70,8 @@ function DetailPage() {
               ''
             )}
           </p>
+            <string>Custom Version - 1: Constant version
+          </p>
         </div>
       </div>
       <button className="explore-button" onClick={() => navigate('/')}>Explore more APIs</button>
