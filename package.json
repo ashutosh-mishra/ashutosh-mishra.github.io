@@ -1,5 +1,6 @@
 {
   "name": "apiexplorer",
+  "homepage": "https://ashutosh-mishra.github.io/explorer/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
