@@ -36,18 +36,16 @@ jobs:
           cd ./
           npm install
 
+      - name: Build Project
+        run: |
+          cd todo
+          npm run build
+
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
         with:
           name: poduction file
           path: ./build
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
 
 
   # Deployment job
