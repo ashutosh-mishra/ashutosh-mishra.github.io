@@ -36,8 +36,10 @@ jobs:
           npm install
 
       - name: Build Project
-        run: |
-          npm run build
+        run: npm run build
+
+      - name: Copy build files to public
+        run: cp -rf ./build/* public/.
 
       - name: Upload artifact to enable deployment
         uses: actions/upload-artifact@v3
@@ -62,4 +64,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} #this is the key of the access token
-          publish_dir: ./build
+          publish_dir: ./public
