@@ -71,7 +71,7 @@ function DetailPage() {
             )}
           </p>
           <p>
-            <strong>Custom Version - 1:</strong> Constant version
+            <strong>Custom Version:</strong> Constant version (Need to remove)
           </p>
         </div>
       </div>
