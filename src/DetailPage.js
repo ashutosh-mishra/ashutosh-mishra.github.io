@@ -61,6 +61,7 @@ function DetailPage() {
             ''
           )}</p>
           <p><strong>Name:</strong> {apiDetails?.info?.contact?.name ? apiDetails.info.contact.name : ''}</p>
+            <p><strong>Name - Duplicate need to remove:</strong> {apiDetails?.info?.contact?.name ? apiDetails.info.contact.name : ''}</p>
           <p>
             <strong>URL:</strong> {apiDetails?.info?.contact?.url ? (
               <a href={apiDetails.info.contact.url} target="_blank" rel="noopener noreferrer">
